@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/appointment.css">
+  <title>Patient Management System</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h2>Doctor Appointment Scheduling</h2>
+      <form id="appointmentForm" method="POST">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="name" required>
+        <label for="">Phone No</label>
+        <input type="text" id="patientName" name="phone" required>
+        <label for="">Message</label>
+        <input type="text" id="patientName" name="message" required>
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="date">Appointment Time:</label>
+        <input type="time" id="date" name="time" required>
+        <button type="submit">Schedule Appointment</button>
+      </form>
+    </div>
+    <br>
+  </main>
+</body>
+</html>

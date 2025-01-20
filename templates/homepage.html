@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Medical facelities: DocSite</title>
+
+    <link rel="stylesheet" href="/static/homepage.css">
+    <link rel ="stylesheet" media="screen and (max-width:855px)" href="phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/static/logo.jpg" alt="DocSite.com">
+        </div>
+        <ul>
+            <li class="item"><a href="{{url_for('register')}}">Signup</a> </li>
+            <li class="item"><a href="{{url_for('login')}}">Login</a> </li>
+            <li class="item"><a href="{{url_for('logout')}}">Logout</a> </li>
+            <li class="item"><a href="{{url_for('dashboard')}}">Dashboard</a> </li>
+            <li class="item"><a href="{{url_for('doctor')}}">Doctor</a> </li>
+        </ul>
+        <br />
+        <br />
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            WELCOME TO DOCSITE!
+        </h1>
+        <p style="font-size: 20px;">DocSite is a company that helps people to find and book Medical Appointment online. </p>
+
+        <a href="{{url_for('appointment')}}"><button class="btn">Appointment</button></a>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="{{url_for('static',filename='img.jpg')}}" alt="">
+                <h2 class="h-secondary center">Operation</h2>
+                <p>We have connection with many hospitals which are best in operation. If you are looking for any type of operation then just book an Appointment with us.</p>
+            </div>
+            <div class="box">
+                <img src="{{url_for('static',filename='checkup.jpg')}}" alt=''>
+                <h2 class="h-secondary center">Check-Up's</h2>
+                <p>Looking for Check-Up's? It may be blood pressure, sugar level in your blood or any other check-up's just click a button and book an appointment with our partners</p>
+            </div>
+            <div class="box">
+                <img src="{{url_for('static',filename='bg.jpg')}}" alt="">
+                <h2 class="h-secondary center">Research</h2>
+                <p>If you are looking forward to a research on any ongoing topic and you fulfill the requirements that we are looking for then you are submit a form to join our research team.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Team</h1>
+        <div id="services">
+            <div class="box team-box">
+                <img src="{{url_for('static',filename='shiv.jpg')}}" alt="">
+                <h2 class="h-secondary center">Shivanand Singh</h2>
+                <p>They specialize in conditions related to the esophagus, stomach, small bowel and colon,Dr.Shivanand Singh,along with diseases of the pancreas,liver and gallbladder.</p>
+            </div>
+            <div class="box team-box">
+                <img src="{{url_for('static',filename='priya.jpg')}}" alt="">
+                <h2 class="h-secondary center">Priyanshu Suryavanshi</h2>
+                <p>Typically, your primary care provider can treat you for common infectious diseases,like if you have a mild case of the flu,strep throat or COVID-19, Dr.Priyanshu.</p>
+            </div>
+            <div class="box team-box">
+                <img src="{{url_for('static',filename='sumit.jpg')}}" alt="">
+                <h2 class="h-secondary center">Sumit Kumar</h2>
+                <p>Specialists focus on one part of the body, like your heart or your bones,Dr.Sumit Kumar clarifies,but internists are trained as generalists,focusing on both preventing.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bottom-bar">
+            <p>&copy; 2024 DOCSITE!. All rights reserved</p>
+            
+        </div>
+    </footer>
+
+</body>
+
+</html>

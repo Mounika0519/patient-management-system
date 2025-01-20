@@ -1,0 +1,78 @@
+/* General reset for padding and margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('/static/log.jpg');
+    background-size: 100% 100%;
+}
+
+/* Centering the form on the page */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Styling the h1 */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields */
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Input placeholder styling */
+form input::placeholder {
+    color: #999;
+}
+
+/* Submit button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+    }
+}

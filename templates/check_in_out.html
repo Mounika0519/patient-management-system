@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/records.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Check-In/Check-Out</h2>
+        <form id="checkinForm" method="POST">
+          <label for="date">Appointment_id</label>
+        <input type="text" id="date" name="id" required>
+          <label for="action">Action:</label>
+          <select id="action" name="action">
+            <option value="Check-In">Check-In</option>
+            <option value="Check-Out">Check-Out</option>
+          </select>
+          <label for="date">check_in_time</label>
+        <input type="datetime-local" id="date" name="date" required>
+        <label for="date">check_out_time</label>
+        <input type="datetime-local" id="date" name="time" required>
+          
+          <a href="{{url_for('records')}}"><button type="submit">Submit</button></a>
+        </form>
+      </div>
+  
+</body>
+</html>

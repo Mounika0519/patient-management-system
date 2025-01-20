@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/records.css">
+    <title>Patient Records</title>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flashes">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Records Storage</h2>
+        <form method="POST" enctype="multipart/form-data">
+       
+            <label for="recordPatientName">Patient Name:</label>
+            <input type="text" id="recordPatientName" name="Patientname" required>
+            
+            <label for="medicalRecords">Medical Records:</label>
+            <textarea id="medicalRecords" name="Records" rows="5" placeholder="Enter medical records or visiting history"></textarea>
+            
+            <label for="file">Medical Records Files:</label>
+            <input type="file" name="image" id="file" accept=".jpg,.jpeg,.png,.pdf">
+
+            <button type="submit">Save Records</button>
+        </form>
+    </div>
+</body>
+</html>

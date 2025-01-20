@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="/static/welcome.css">
+</head>
+<body>
+    <div class="welcome-page">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">Health<span>Care</span></div>
+            <ul class="nav-links">
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Health<span>Care</span></h1>
+                <p>Experience professional and caring healthcare at your fingertips. Book appointments with ease and confidence.</p>
+                <div class="hero-buttons">
+                    <a href="{{url_for('home')}}" class="btn secondary-btn">Click hear...</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{url_for('static',filename='img.jpg')}}" alt="Doctor illustration">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

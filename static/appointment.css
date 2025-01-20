@@ -1,0 +1,59 @@
+body {
+  background-image: url('/static/background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
+}
+
+
+header {
+  background-color: gray;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+main {
+  margin: 20px auto;
+  max-width: 800px;
+  position: absolute;
+  right: 20%;
+  padding: 20px;
+}
+.container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 130%;
+}
+h2 {
+  color: #333;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
